@@ -24,6 +24,20 @@ pnpm build
 pnpm test
 ```
 
+## git 
+```bash
+git clone https://github.com/xp2000926/smarty-ui-vite.git #克隆
+
+git add . #添加到暂存区
+
+git commit -m "chore: 备注所修改的内容" # 提交的备注信息
+
+git push #添加到远程仓库
+
+npm publish #本地发包
+```
+
+## 项目目录
 ```bash
 .
 ├── config # 配置文件

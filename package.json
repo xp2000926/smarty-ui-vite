@@ -18,7 +18,7 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "min-smarty-ui-vite",
+  "author": "xp2000926",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",

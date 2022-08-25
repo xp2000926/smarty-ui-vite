@@ -14,8 +14,7 @@
     "docs:serve": "vitepress serve docs",
     "clear-dist": "rimraf dist",
     "clear-node_modules": "rimraf node_modules",
-    "test:run": "vitest run",
-    "prepare": "husky install"
+    "test:run": "vitest run"
   },
   "keywords": [],
   "author": "xp2000926",

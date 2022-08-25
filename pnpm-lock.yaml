@@ -4,9 +4,16 @@ importers:
 
   .:
     specifiers:
+      '@commitlint/cli': ^17.0.3
+      '@commitlint/config-conventional': ^17.0.3
+      husky: ^8.0.1
       vite: ^3.0.9
     dependencies:
       vite: 3.0.9
+    devDependencies:
+      '@commitlint/cli': 17.0.3
+      '@commitlint/config-conventional': 17.0.3
+      husky: 8.0.1
 
   packages/docs-vite:
     specifiers:

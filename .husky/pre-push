@@ -2,4 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo ====单元测试====
+cd packages/min-smarty-ui-vite
 pnpm test:run

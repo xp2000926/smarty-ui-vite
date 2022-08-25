@@ -54,3 +54,4 @@ npm publish #本地发包
 │                 └── Button.spec.ts   
 └── types # TS类型定义
 ```
+<!-- pnpm i min-smarty-ui-vite -r --filter docs-vite -->

@@ -1,15 +1,16 @@
 {
-  "name": "smarty-ui-vite",
+  "name": "docs-vite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vite": "^3.0.9"
+    "min-smarty-ui-vite": "workspace:^0.1.4",
+    "vue": "^3.2.37"
   }
 }

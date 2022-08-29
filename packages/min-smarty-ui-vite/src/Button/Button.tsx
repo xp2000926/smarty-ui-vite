@@ -8,7 +8,6 @@
 // });
 import { defineComponent, PropType } from "vue";
 import "uno.css";
-
 export type IColor =
   | "black"
   | "gray"
@@ -17,8 +16,8 @@ export type IColor =
   | "green"
   | "blue"
   | "indigo"
-  | ""
-  | "pipurplenk";
+  | "purple"
+  | "pink";
 export type ISize = "small" | "medium" | "large";
 export const props = {
   color: {

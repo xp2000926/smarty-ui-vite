@@ -39,16 +39,16 @@
 // .use(SmartyUI)
 // .mount("#app");
 import { createApp } from "vue";
-import SmartyUI from "./entry";
+import MinSmartyUI from "./entry";
 createApp({
   template:`
-     <div style="margin-bottom:20px;">
-        <SButton color="blue">主要按钮</SButton>
-        <SButton color="green">绿色按钮</SButton>
-        <SButton color="gray">灰色按钮</SButton>
-        <SButton color="yellow">黄色按钮</SButton>
-        <SButton color="red">红色按钮</SButton>
-    </div>
+  <div style="margin-bottom:20px;">
+  <SButton color="blue">主要按钮</SButton>
+  <SButton color="green">绿色按钮</SButton>
+  <SButton color="gray">灰色按钮</SButton>
+  <SButton color="yellow">黄色按钮</SButton>
+  <SButton color="red">红色按钮</SButton>
+ </div>
     <div style="margin-bottom:20px;"
     >
         <SButton color="blue" plain>朴素按钮</SButton>
@@ -78,5 +78,5 @@ createApp({
    </div>
     `
 })
-.use(SmartyUI)
+.use(MinSmartyUI)
 .mount("#app");

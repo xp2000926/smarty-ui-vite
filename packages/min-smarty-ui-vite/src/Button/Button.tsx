@@ -6,8 +6,9 @@
 //         return h("button", null, "MyButton");
 //     },
 // });
-import { defineComponent, PropType, toRefs } from "vue";
+import { defineComponent, PropType } from "vue";
 import "uno.css";
+
 export type ISize = "small" | "medium" | "large";
 export type IColor =
   | "black"
@@ -20,6 +21,7 @@ export type IColor =
   | "purple"
   | "pink";
 export const props = {
+ 
   color: {
     type: String as PropType<IColor>,
     default: "blue", // 设定默认颜色
@@ -33,7 +35,6 @@ export const props = {
     type: Boolean,
     default: false,
   },
-
   plain: {
     type: Boolean,
     default: false,
@@ -45,7 +46,7 @@ export const props = {
 } as const;
 export default defineComponent({
   name: "SButton",
-  props, // 注册属性
+  props,
   setup(props, { slots }) {
     const size = {
       small: {
@@ -67,7 +68,7 @@ export default defineComponent({
     return () => (
       <button
         class={`
-      py-${size[props.size].y}
+          py-${size[props.size].y}
           px-${size[props.size].x}
           ${props.round ? "rounded-full" : "rounded-lg"}
           bg-${props.color}-${props.plain ? "100" : "500"}
@@ -80,7 +81,7 @@ export default defineComponent({
           hover:text-white
           transition duration-300 ease-in-out transform hover:scale-105
           mx-1
-      `}
+          `}
       >
         {props.icon !== "" ? (
           <i class={`i-ic-baseline-${props.icon} p-3`}></i>

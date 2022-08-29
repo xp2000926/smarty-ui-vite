@@ -35,7 +35,7 @@ export const config = {
     },
     minify: "terser", // boolean | 'terser' | 'esbuild'
     sourcemap: true, // 输出单独 source文件
-    reportCompressedSize: true, // 生成压缩大小报告
+    brotliSize: true, // 生成压缩大小报告
     cssCodeSplit: true, // 追加
     lib: {
       entry: "./src/entry.ts",

@@ -25,8 +25,6 @@ importers:
 
   packages/min-smarty-ui-vite:
     specifiers:
-      '@commitlint/cli': ^17.0.3
-      '@commitlint/config-conventional': ^17.0.3
       '@iconify-json/ic': ^1.1.9
       '@typescript-eslint/eslint-plugin': ^5.33.1
       '@typescript-eslint/parser': ^5.33.1
@@ -63,8 +61,6 @@ importers:
       vite: 3.0.9_terser@5.15.0
       vue: 3.2.37
     devDependencies:
-      '@commitlint/cli': 17.0.3
-      '@commitlint/config-conventional': 17.0.3
       '@iconify-json/ic': 1.1.9
       '@typescript-eslint/eslint-plugin': 5.35.1_ktjxjibzrfqejavile4bhmzhjq
       '@typescript-eslint/parser': 5.35.1_4rv7y5c6xz3vfxwhbrcxxi73bq

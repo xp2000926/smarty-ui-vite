@@ -5,8 +5,9 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import { presetUno, presetAttributify, presetIcons } from "unocss";
 // import Unocss from "unocss/vite";
 import Unocss from "./config/unocss";
+import { UserConfig } from "vitest";
 // https://vitejs.dev/config/
-export default defineConfig({
+export const config = {
   resolve: { alias: { vue: "vue/dist/vue.esm-bundler.js" } },
   plugins: [
     vue(),
@@ -38,8 +39,8 @@ export default defineConfig({
     cssCodeSplit: true, // 追加
     lib: {
       entry: "./src/entry.ts",
-      name: "SmartyUI",
-      fileName: "smarty-ui",
+      name: "MinSmartyUI",
+      fileName: "min-smarty-ui",
       // 导出模块格式
       formats: ["esm", "umd", "iife"], // 导出模块类型
     },
@@ -56,4 +57,5 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+};
+export default defineConfig(config as UserConfig);

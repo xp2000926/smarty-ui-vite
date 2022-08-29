@@ -9,7 +9,6 @@
 import { defineComponent, PropType } from "vue";
 import "uno.css";
 
-export type ISize = "small" | "medium" | "large";
 export type IColor =
   | "black"
   | "gray"
@@ -18,10 +17,10 @@ export type IColor =
   | "green"
   | "blue"
   | "indigo"
-  | "purple"
-  | "pink";
+  | ""
+  | "pipurplenk";
+export type ISize = "small" | "medium" | "large";
 export const props = {
- 
   color: {
     type: String as PropType<IColor>,
     default: "blue", // 设定默认颜色
@@ -56,7 +55,7 @@ export default defineComponent({
       },
       medium: {
         x: "3",
-        y: "1.5",
+        y: "1",
         text: "base",
       },
       large: {

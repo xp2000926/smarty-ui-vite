@@ -38,7 +38,7 @@
 // })
 // .use(SmartyUI)
 // .mount("#app");
-import { createApp } from "vue/dist/vue.esm-browser";
+import { createApp } from "vue";
 import SmartyUI from "./entry";
 createApp({
   template:`

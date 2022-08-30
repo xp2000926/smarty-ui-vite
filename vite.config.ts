@@ -16,9 +16,7 @@ export default defineConfig({
   plugins: [
     vue(),
     // 添加JSX插件
-    vueJsx({
-      // options are passed on to @vue/babel-plugin-jsx
-    }),
+    vueJsx(),
      // 添加UnoCSS插件
     Unocss()
   ],

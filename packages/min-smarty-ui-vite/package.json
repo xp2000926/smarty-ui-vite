@@ -17,7 +17,8 @@
     "docs:serve": "vitepress serve docs",
     "clear-dist": "rimraf dist",
     "clear-node_modules": "rimraf node_modules",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "xp2000926",
@@ -29,6 +30,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "2.0.2",
     "babel-eslint": "^10.1.0",
+    "c8": "^7.12.0",
     "eslint": "^8.22.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-json": "^3.1.0",

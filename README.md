@@ -4,7 +4,7 @@
 <img src="https://github.com/xp2000926/smarty-ui-vite/blob/main/assets/logo.png" style="width:200px;" />
 </p>
 
-<h1 align="center">Smarty-Admin</h1>
+<h1 align="center">min-smarty-ui-vite</h1>
 
 <p align="center">
 前端工程化学习模型

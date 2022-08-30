@@ -5,6 +5,9 @@
 <p align="center">
 五脏俱全的组件库学习模型
 </p>
+<div style="text-align:center">
+<img src="https://img.shields.io/npm/l/min-smarty-ui-vite">
+</div>
 
 ## Features
 

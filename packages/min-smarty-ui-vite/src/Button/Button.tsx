@@ -24,7 +24,6 @@ export const props = {
     type: String as PropType<IColor>,
     default: "blue", // 设定默认颜色
   },
-  // 新增
   size: {
     type: String as PropType<ISize>,
     default: "medium",

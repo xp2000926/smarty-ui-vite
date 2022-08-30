@@ -13,7 +13,8 @@
 <p align="center">
     <a href="https://www.npmjs.com/package/min-smarty-ui-vite"><img src="https://img.shields.io/npm/v/min-smarty-ui-vite?color=c95f8b&amp;label=NPM" alt="NPM version"></a>
     <a href="https://github.com/xp2000926/smarty-ui-vite/actions/workflows/main.yml"><img src="https://github.com/xp2000926/smarty-ui-vite/actions/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;"></a>
-      <img src="https://img.shields.io/github/license/xp2000926/smarty-ui-vite">
+    <img src="https://img.shields.io/github/license/xp2000926/smarty-ui-vite">
+    <a href="https://codecov.io/gh/xp2000926/smarty-ui-vite"><img src="https://codecov.io/gh/xp2000926/smarty-ui-vite/branch/main/graph/badge.svg?token=34A0E1YVWF"/> </a>
 </p>
 
 <br>

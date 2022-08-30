@@ -3,7 +3,6 @@
   "version": "0.1.4",
   "description": "",
   "main": "index.js",
-  "homepage": "https://smarty-ui-vite.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "pnpm build:components",

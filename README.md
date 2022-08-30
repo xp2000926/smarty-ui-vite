@@ -1,13 +1,13 @@
 <br>
 
 <p align="center">
-<img src="https://github.com/smarty-team/smarty-admin/blob/main/assets/logo.jpeg" style="width:200px;" />
+<img src="https://github.com/xp2000926/smarty-ui-vite/blob/main/assets/logo.png" style="width:200px;" />
 </p>
 
 <h1 align="center">Smarty-Admin</h1>
 
 <p align="center">
-前端工程化教学模型
+前端工程化学习模型
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ npm i min-smarty-ui-vite
 
 ```js
 import Vue from 'vue';
-import SmartyUI from 'element-ui';
+import MinSmartyUI from 'min-smarty-ui-vite';
 
 const App = {
 	template: `
@@ -48,5 +48,5 @@ const App = {
             `,
 };
 
-createApp(App).use(SmartyUI).mount('#app');
+createApp(App).use(MinSmartyUI).mount('#app');
 ```

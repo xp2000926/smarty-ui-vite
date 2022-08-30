@@ -1,41 +1,52 @@
+<br>
+
 <p align="center">
-<img src="../../assets/logo.png" style="width:200px;" />
+<img src="https://github.com/xp2000926/smarty-ui-vite/blob/main/assets/logo.png" style="width:200px;" />
 </p>
-<h1 align="center">Min-Smarty-UI</h1>
+
+<h1 align="center">Smarty-Admin</h1>
+
 <p align="center">
-五脏俱全的组件库学习模型
+前端工程化学习模型
 </p>
-<div style="text-align:center">
-<img src="https://img.shields.io/npm/l/min-smarty-ui-vite">
-</div>
+
+<p align="center">
+    <a href="https://www.npmjs.com/package/min-smarty-ui-vite"><img src="https://img.shields.io/npm/v/min-smarty-ui-vite?color=c95f8b&amp;label=NPM" alt="NPM version"></a>
+    <a href="https://github.com/xp2000926/smarty-ui-vite/actions/workflows/main.yml"><img src="https://github.com/xp2000926/smarty-ui-vite/actions/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;"></a>
+      <img src="https://img.shields.io/github/license/xp2000926/smarty-ui-vite">
+</p>
+
+<br>
+<br>
 
 ## Features
 
 前端工程化演示项目。
-- 基于Vue框架
-- 支持JSX与Vue单文件组件
-- Jest + Vue3 plugins实现单元测试
+
+- 基于 Vue 框架
+- 支持 JSX 与 Vue 单文件组件
+- Jest + Vue3 plugins 实现单元测试
 - Eslint + Prettier + Husky 语法检查
-- 采用Rollup构建
 - Vitepress + Vercel 文档网站搭建
-- 基于Action CI 实现持续集成与交付
+- 基于 Action CI 实现持续集成与交付
 
 ## Install
+
 ```bash
 npm i min-smarty-ui-vite
 ```
+
 ## Quick Start
+
 ```js
-import Vue from 'vue'
-import MinSmartyUI from 'min-smarty-ui-vite'
+import Vue from 'vue';
+import MinSmartyUI from 'min-smarty-ui-vite';
 
 const App = {
-template: `
-        <MyButton/>
-    `,
+	template: `
+                <MyButton/>
+            `,
 };
 
-createApp(App)
-.use(MinSmartyUI)
-.mount("#app");
+createApp(App).use(MinSmartyUI).mount('#app');
 ```

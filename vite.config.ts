@@ -4,7 +4,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "./config/unocss";
 const  rollupOptions = {
-  external: ["vue", "vue-router"],
+  external: ["vue"],
   output: {
     assetFileNames: "[name].[ext]",
     exports: "named",
@@ -24,8 +24,9 @@ export default defineConfig({
   // 添加库模式配置
   build: {
     rollupOptions,
-    minify:false,
-    
+    minify: 'terser', // boolean | 'terser' | 'esbuild'
+    sourcemap: true, // 输出单独 source文件
+    brotliSize: true,  // 生成压缩大小报告
     cssCodeSplit: true,   // 追加
     lib: {
       entry: "./src/entry.ts",

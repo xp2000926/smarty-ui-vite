@@ -3,6 +3,7 @@
   "version": "0.1.6",
   "description": "",
   "main": "index.js",
+  "module": "./dist/min-smarty-ui.esm.js",
   "homepage": "https://smarty-ui-vite.vercel.app/",
   "scripts": {
     "dev": "vite",

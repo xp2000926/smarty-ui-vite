@@ -1,15 +1,16 @@
-<h1>Demo IFFE</h1>
+<h1>Demo IFFE OnDemand</h1>
 <div id="app"></div>
 <link rel="stylesheet" href="../../dist/entry.css">
 <script src="../../node_modules/vue/dist/vue.global.js"></script>
-<script src="../../dist/smarty-ui.iife.js"></script>
+<script src="../../dist/button/index.iife.js"></script>
 <script>
-    console.log('111')
-    const { createApp } = Vue
+    const {
+        createApp
+    } = Vue
     console.log('vue', Vue)
-    console.log('SmartyUI', SmartyUI)
+    console.log('SmartyUI', Button)
     createApp({
-        template: `
+            template: `
         <div style="margin-bottom:20px;">
             <SButton color="blue">主要按钮</SButton>
             <SButton color="green">绿色按钮</SButton>
@@ -44,5 +45,8 @@
             <SButton color="yellow" round plain icon="message"></SButton>
             <SButton color="red" round plain icon="delete"></SButton>
         </div>
-    `}).use(SmartyUI.default).mount('#app')
+    `
+        })
+        .use(Button.default)
+        .mount('#app')
 </script>

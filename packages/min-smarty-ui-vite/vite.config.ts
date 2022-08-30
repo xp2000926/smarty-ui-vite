@@ -37,8 +37,8 @@ export default defineConfig({
     cssCodeSplit: true,   // 追加
     lib: {
       entry: "./src/entry.ts",
-      name: "SmartyUI",
-      fileName: "smarty-ui",
+      name: "MinSmartyUI",
+      fileName: "min-smarty-ui",
       // 导出模块格式
       formats: ["esm", "umd","iife"], // 导出模块类型
     },

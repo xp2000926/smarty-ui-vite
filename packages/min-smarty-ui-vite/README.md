@@ -40,14 +40,14 @@ npm i min-smarty-ui-vite
 ## Quick Start
 
 ```js
-import Vue from 'vue';
-import MinSmartyUI from 'min-smarty-ui-vite';
+import Vue from "vue";
+import "min-smarty-ui-vite/entry.css";
+import MinSmartyUI from "min-smarty-ui-vite";
 
 const App = {
-	template: `
-                <MyButton/>
-            `,
+  template: `
+        <SButton color="blue">主要按钮</SButton>
+    `,
 };
-
-createApp(App).use(MinSmartyUI).mount('#app');
+createApp(App).use(MinSmartyUI).mount("#app");
 ```

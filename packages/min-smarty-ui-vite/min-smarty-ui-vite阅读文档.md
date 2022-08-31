@@ -30,7 +30,7 @@ git clone https://github.com/xp2000926/smarty-ui-vite.git #克隆
 
 git add . #添加到暂存区
 
-git commit -m "chore: 备注所修改的内容" # 提交的备注信息
+git commit -m "build/chore/ci/docs/feat/fix/perf/refactor/revert/style/test: 备注所修改的内容" # 提交的备注信息
 
 git push #添加到远程仓库
 

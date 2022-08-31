@@ -1,6 +1,7 @@
 // @ts-ignore
-import * as fs from "fs-extra";
+import * as fse from "fs-extra";
 import * as path from "path";
+import * as fs from "fs";
 import { config } from "../vite.config";
 import { build, InlineConfig, defineConfig, UserConfig } from "vite";
 const buildAll = async () => {
@@ -9,15 +10,40 @@ const buildAll = async () => {
 
   // 全量打包
   await build(defineConfig(config as UserConfig) as InlineConfig);
+  // 复制 Package.json 文件
+  const packageJson = require("../package.json");
+  packageJson.main = "min-smarty-ui.umd.js";
+  packageJson.module = "min-smarty-ui.esm.js";
+  fse.outputFile(
+    path.resolve(config.build.outDir, `package.json`),
+    JSON.stringify(packageJson, null, 2)
+  );
 
+  // 拷贝 README.md文件
+  fse.copyFileSync(
+    path.resolve("./README.md"),
+    path.resolve(config.build.outDir + "/README.md")
+  );
+  fs.mkdirSync(config.build.outDir + "/assets", (err:any) => {
+    if (err) {
+      console.log("文件夹创建失败", err);
+    } else {
+      console.log("文件夹创建成功");
+    }
+  });
+  fse.copyFileSync(
+    path.resolve("./assets/logo.jpeg"),
+    path.resolve(config.build.outDir + "/assets/logo.jpeg")
+  );
   // await build(defineConfig({}))
   const srcDir = path.resolve(__dirname, "../src/");
-  fs.readdirSync(srcDir)
+  fse
+    .readdirSync(srcDir)
     .filter((name) => {
       // 只要目录不要文件，且里面包含index.ts
       const componentDir = path.resolve(srcDir, name);
-      const isDir = fs.lstatSync(componentDir).isDirectory();
-      return isDir && fs.readdirSync(componentDir).includes("index.ts");
+      const isDir = fse.lstatSync(componentDir).isDirectory();
+      return isDir && fse.readdirSync(componentDir).includes("index.ts");
     })
     .forEach(async (name) => {
       const outDir = path.resolve(config.build.outDir, name);
@@ -34,7 +60,7 @@ const buildAll = async () => {
       Object.assign(config.build, custom);
       await build(defineConfig(config as UserConfig) as InlineConfig);
 
-      fs.outputFile(
+      fse.outputFile(
         path.resolve(outDir, `package.json`),
         `{
           "name": "min-smarty-ui-vite/${name}",

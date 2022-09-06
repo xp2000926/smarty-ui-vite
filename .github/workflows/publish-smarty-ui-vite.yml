@@ -1,4 +1,4 @@
-name: Publish min-Smarty-ui-vite To Npm
+name: Publish Smarty-ui-vite-min To Npm
 
 on:
   push:

@@ -1,6 +1,6 @@
-<center>
+<p align="center">
 <img src="./packages/min-smarty-ui-vite/assets/logo.jpeg" style="width:200px;" />
-</center>
+</p>
 
 <h1 align="center">min-smarty-ui-vite</h1>
 

@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "node ./scripts/preinstall.js",
-    "prepare": "husky install",
-    "clear-dist": "rimraf packages/**/ dist &&rimraf dist",
-    "clear-node_modules": "rimraf packages/**/node_modules && rimraf node_modules"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +16,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "husky": "^8.0.1",
-    "rimraf": "^3.0.2"
+    "husky": "^8.0.1"
   }
 }

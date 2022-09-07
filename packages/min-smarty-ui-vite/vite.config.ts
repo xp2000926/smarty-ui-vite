@@ -19,7 +19,7 @@ export const config = {
     rollupOptions: {
       external: ["vue"],
       output: {
-        assetFileNames: "[name].[ext]",
+        assetFileNames: "index.[ext]",
         exports: "named",
         globals: {
           vue: "Vue",

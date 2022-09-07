@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-<img src="./packages/min-smarty-ui-vite/assets/logo.jpeg" style="width:200px;" />
+<img src="./assets/logo.jpeg" style="width:200px;" />
 </p>
 
 <h1 align="center">min-smarty-ui-vite</h1>
@@ -42,7 +42,7 @@ npm i min-smarty-ui-vite
 ```js
 import Vue from 'vue'
 import App from './App.vue'
-import 'min-smarty-ui-vite/entry.css'
+import 'min-smarty-ui-vite/index.css'
 import MinSmartyUI from 'min-smarty-ui-vite'
 createApp(App).use(MinSmartyUI).mount("#app")
 ```

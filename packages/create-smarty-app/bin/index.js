@@ -5,8 +5,10 @@ import {
 } from "util";
 import figlet from "figlet";
 import clear from "clear";
+import chalk from "chalk";
 import inquirer from "inquirer";
 import chalkAnimation from "chalk-animation";
+
 const log = (content) => console.log(chalk.green(content));
 const opt = {
     "minSmartyUI应用模版(Vite)": "smarty-ui-vite",
@@ -21,7 +23,7 @@ const question = [{
     message: "请选择要创建的项目？",
     name: "operation",
     choices: Object.keys(opt),
-}];
+}, ];
 
 // 打印欢迎画面
 clear();
@@ -38,7 +40,6 @@ setTimeout(() => {
     rainbow.stop(); // Animation stops
     query();
 }, 500);
-
 async function query() {
     const answer = await inquirer.prompt(question);
 

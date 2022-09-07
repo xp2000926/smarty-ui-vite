@@ -18,8 +18,10 @@ export default async () => {
   ]);
 
   log("🚌 创建项目:" + name);
+
   // 从github克隆项目到指定文件夹
   await clone("github:smarty-team/smarty-ui-app-js-template", name);
+
   // 生成路由定义
   compile(
     {
@@ -28,6 +30,7 @@ export default async () => {
     `./${name}/package.json`,
     `./${name}/template/package.hbs.json`
   );
+
   log(`
 👌 安装完成：
 To get Start:
@@ -39,13 +42,14 @@ npm run dev
             `);
 };
 
+
 /**
  * 编译模板文件
  * @param meta 数据定义
  * @param filePath 目标文件路径
  * @param templatePath 模板文件路径
  */
- function compile(meta, filePath, templatePath) {
+function compile(meta, filePath, templatePath) {
   if (fs.existsSync(templatePath)) {
     const content = fs.readFileSync(templatePath).toString();
     const result = handlebars.compile(content)(meta);

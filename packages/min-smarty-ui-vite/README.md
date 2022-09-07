@@ -1,8 +1,6 @@
-<br>
-
-<p align="center">
-<img src="./assets/logo.jpeg" style="width:200px;" />
-</p>
+<center>
+<img src="https://github.com/xp2000926/smarty-ui-vite/blob/main/packages/min-smarty-ui-vite/assets/logo.jpeg" style="width:200px;" />
+</center>
 
 <h1 align="center">min-smarty-ui-vite</h1>
 
@@ -40,14 +38,9 @@ npm i min-smarty-ui-vite
 ## Quick Start
 
 ```js
-import Vue from 'vue';
-import MinSmartyUI from 'min-smarty-ui-vite';
-
-const App = {
-	template: `
-                <MyButton/>
-            `,
-};
-
-createApp(App).use(MinSmartyUI).mount('#app');
+import Vue from 'vue'
+import App from './App.vue'
+import 'min-smarty-ui-vite/index.css'
+import MinSmartyUI from 'min-smarty-ui-vite'
+createApp(App).use(MinSmartyUI).mount("#app")
 ```

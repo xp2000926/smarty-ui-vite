@@ -24,17 +24,11 @@ const buildAll = async () => {
     path.resolve("./README.md"),
     path.resolve(config.build.outDir + "/README.md")
   );
-  fs.mkdirSync(config.build.outDir + "/assets", (err:any) => {
-    if (err) {
-      console.log("文件夹创建失败", err);
-    } else {
-      console.log("文件夹创建成功");
-    }
-  });
-  fse.copyFileSync(
-    path.resolve("./assets/logo.jpeg"),
-    path.resolve(config.build.outDir + "/assets/logo.jpeg")
-  );
+  // fs.mkdirSync(config.build.outDir + "/assets");
+  // fse.copyFileSync(
+  //   path.resolve("./assets/logo.jpeg"),
+  //   path.resolve(config.build.outDir + "/assets/logo.jpeg")
+  // );
   // await build(defineConfig({}))
   const srcDir = path.resolve(__dirname, "../src/");
   fse

@@ -1,6 +1,6 @@
 {
   "name": "create-min-smarty-app",
-  "version": "0.1.1",
+  "version": "0.1.9",
   "description": "",
   "main": "index.js",
   "type": "module",

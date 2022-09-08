@@ -19,14 +19,12 @@ jobs:
           version: 6.31.0
       - name: Install modules
         run: pnpm install
-      - name: Build
-        run: cd packages/min-smarty-ui-vite &&  npm run build
       - name: "Publish to the npm registry"
         uses: primer/publish@3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.SMARTY_UI_VITE_MIN }} # 跟前面步骤中的 NPM_AUTH_TOKEN 保持一致
+          NPM_AUTH_TOKEN: ${{ secrets.SMARTY_UI_VITE_MIN_CLI }} # 跟前面步骤中的 NPM_AUTH_TOKEN 保持一致
         with:
           default_branch: "publish-create-smarty-app-cli"
           dir: "packages/create-smarty-app"
-          #npm_args: "--unsafe-perm --allow-same-version"
+          # npm_args: "--unsafe-perm --allow-same-version"

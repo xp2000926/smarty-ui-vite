@@ -1,6 +1,6 @@
 {
   "name": "min-smarty-ui-vite",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "",
   "main": "index.js",
   "module": "./dist/min-smarty-ui.esm.js",

@@ -1,7 +1,9 @@
 ## Install
 
 ```bash
-npm i create-min-smarty-app
+pnpm init
+pnpm i create-min-smarty-app -D
+npx create-smarty
 # 或者
 npm init min-smarty-app
 ## 或者
